@@ -1,5 +1,8 @@
 360 t7 使用 istoreos 风格主页时 quickstart 修复 CPU 温度显示，CMCC RAX3000 EMMC 或 增强版也可使用这个文件
 
+替换原来的这个istore_backend.lua文件，再编译可以正常显示温度
+luci-app-quickstart/luasrc/controller/istore_backend.lua
+
 参考https://www.right.com.cn/forum/thread-8329673-7-1.html里的解决办法"
 可以试试用这个 lua 文件覆盖 /usr/lib/lua/luci/controller/istore_backend.lua 修复温度显示：
 https://gist.github.com/puteulanus/1c180fae6bccd25e57eb6d30b7aa28aa
