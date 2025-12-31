@@ -9,3 +9,5 @@ https://gist.github.com/puteulanus/1c180fae6bccd25e57eb6d30b7aa28aa
 核心问题是 istoreos 的 quickstart 不支持这个架构的 CPU 温度获取所以没有输出。
 因为重新编译 quickstart 难度太高，从 lua 这边下手，让 cursor 帮忙修改了 lua 脚本，
 对 /istore/system/status/ 请求，读取 /sys/class/thermal/thermal_zone0/temp 的 CPU 温度添加到返回值中，测试温度显示正常了"
+
+istoreos 风格官方原档https://github.com/linkease/nas-packages-luci/tree/main/luci/luci-app-quickstart/luasrc/controller
